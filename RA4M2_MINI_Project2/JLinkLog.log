@@ -1,0 +1,219 @@
+T3EB8 000:000.853   SEGGER J-Link V8.12f Log File
+T3EB8 000:001.129   DLL Compiled: Feb 12 2025 13:34:40
+T3EB8 000:001.143   Logging started @ 2025-07-20 07:45
+T3EB8 000:001.154   Process: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\e2-server-gdb.exe
+T3EB8 000:001.171 - 1.165ms 
+T3EB8 000:001.193 JLINK_GetDLLVersion()
+T3EB8 000:001.205 - 0.012ms returns 81206
+T3EB8 000:002.829 JLINK_OpenEx(...)
+T3EB8 000:007.966   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3EB8 000:008.546   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3EB8 000:008.653   Decompressing FW timestamp took 93 us
+T3EB8 000:013.937   Hardware: V9.60
+T3EB8 000:013.952   S/N: 69667700
+T3EB8 000:013.959   OEM: SEGGER
+T3EB8 000:013.967   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T3EB8 000:014.362   Bootloader: (FW returned invalid version)
+T3EB8 000:014.955   TELNET listener socket opened on port 19021
+T3EB8 000:015.047   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T3EB8 000:015.166   WEBSRV Webserver running on local port 19080
+T3EB8 000:015.261   Looking for J-Link GUI Server exe at: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\ARM\Segger_v8.12.6\JLinkGUIServer.exe
+T3EB8 000:015.333   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T3EB8 000:015.357   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T3EB8 000:048.207   J-Link GUI Server info: "J-Link GUI server V8.18 "
+T3EB8 000:049.815 - 46.978ms returns "O.K."
+T3EB8 000:049.933 JLINK_ExecCommand("ProjectFile=C:\Users\a8456\e2_studio\workspace\RA4M2_MINI_Project2/RA4M2_MINI_Project2.elf.jlink", ...). 
+T3EB8 000:064.395 - 14.467ms returns 0x00
+T3EB8 000:064.686 JLINK_ExecCommand("device=R7FA4M2AD", ...). 
+T3EB8 000:065.403   Flash bank @ 0x0100A100: SFL: Parsing sectorization info from ELF file
+T3EB8 000:065.415     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000010, .SectorStartAddr = 0x00000000
+T3EB8 000:065.423   FlashBank @0x0100A100: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T3EB8 000:065.606   Flash bank @ 0x60000000: SFL: Parsing sectorization info from ELF file
+T3EB8 000:065.616     FlashDevice.SectorInfo[0]: .SectorSize = 0x00010000, .SectorStartAddr = 0x00000000
+T3EB8 000:068.805   Device "R7FA4M2AD" selected.
+T3EB8 000:069.165 - 4.469ms returns 0x00
+T3EB8 000:069.193 JLINK_TIF_GetAvailable(...)
+T3EB8 000:069.346 - 0.152ms 
+T3EB8 000:069.368 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T3EB8 000:069.923 - 0.554ms returns 0x00
+T3EB8 000:069.937 JLINK_SetSpeed(4000)
+T3EB8 000:070.029 - 0.093ms 
+T3EB8 000:070.045 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:070.210   ConfigTargetSettings() start
+T3EB8 000:070.221    J-Link Script File: Executing ConfigTargetSettings()
+T3EB8 000:070.228   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3EB8 000:074.566   ConfigTargetSettings() end - Took 4.34ms
+T3EB8 000:074.577   InitTarget() start
+T3EB8 000:074.585    J-Link Script File: Executing InitTarget()
+T3EB8 000:074.591   SWD selected. Executing JTAG -> SWD switching sequence.
+T3EB8 000:076.036   DAP initialized successfully.
+T3EB8 000:076.051   Determining TrustZone configuration...
+T3EB8 000:076.750     Secure Debug: Enabled (SSD)
+T3EB8 000:076.760   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3EB8 000:077.325     --> Correct transfer type configured. Done.
+T3EB8 000:077.336   InitTarget() end - Took 2.75ms
+T3EB8 000:077.870   Found SW-DP with ID 0x6BA02477
+T3EB8 000:079.601   DPIDR: 0x6BA02477
+T3EB8 000:079.609   CoreSight SoC-400 or earlier
+T3EB8 000:079.618   Scanning AP map to find all available APs
+T3EB8 000:080.474   AP[2]: Stopped AP scan as end of AP map has been reached
+T3EB8 000:080.482   AP[0]: AHB-AP (IDR: 0x84770001, ADDR: 0x00000000)
+T3EB8 000:080.490   AP[1]: APB-AP (IDR: 0x54770002, ADDR: 0x01000000)
+T3EB8 000:080.498   Iterating through AP map to find AHB-AP to use
+T3EB8 000:081.407   AP[0]: Core found
+T3EB8 000:081.415   AP[0]: AHB-AP ROM base: 0xE00FE000
+T3EB8 000:081.780   CPUID register: 0x410FD214. Implementer code: 0x41 (ARM)
+T3EB8 000:081.789   Feature set: Mainline
+T3EB8 000:082.149   Cache: No cache
+T3EB8 000:082.168   Found Cortex-M33 r0p4, Little endian.
+T3EB8 000:082.466   -- Max. mem block: 0x00010A88
+T3EB8 000:082.882   
+  ***** Warning: 
+T3EB8 000:082.891   Cortex-M (ARMv8-M and later): The connected J-Link (S/N 69667700) uses an old firmware module that does not handle I/D-cache correctly. Proper debugging functionality cannot be guaranteed if cache is enabled
+T3EB8 000:082.902   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:083.107   CPU_ReadMem(4 bytes @ 0xE0002000)
+T3EB8 000:083.325   FPUnit: 8 code (BP) slots and 0 literal slots
+T3EB8 000:083.334   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3EB8 000:083.576   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3EB8 000:083.871   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3EB8 000:084.121   CPU_ReadMem(4 bytes @ 0xE0001028)
+T3EB8 000:084.477   CPU_ReadMem(4 bytes @ 0xE0001038)
+T3EB8 000:084.709   CPU_ReadMem(4 bytes @ 0xE0001048)
+T3EB8 000:084.976   CPU_ReadMem(4 bytes @ 0xE0001058)
+T3EB8 000:085.194   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3EB8 000:085.466   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T3EB8 000:085.681   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T3EB8 000:085.907   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T3EB8 000:086.132   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T3EB8 000:086.374   CPU_ReadMem(4 bytes @ 0xE000EFB8)
+T3EB8 000:086.658   Security extension: implemented
+T3EB8 000:086.667   Secure debug: enabled
+T3EB8 000:086.674   CoreSight components:
+T3EB8 000:086.682   ROMTbl[0] @ E00FE000
+T3EB8 000:086.690   CPU_ReadMem(64 bytes @ 0xE00FE000)
+T3EB8 000:087.205   CPU_ReadMem(32 bytes @ 0xE0044FE0)
+T3EB8 000:087.583   CPU_ReadMem(4 bytes @ 0xE0044FBC)
+T3EB8 000:087.793   CPU_ReadMem(4 bytes @ 0xE0044FCC)
+T3EB8 000:088.017   [0][0]: E0044000 CID B105900D PID 005BB906 DEVARCH 00000000 DEVTYPE 14 CTI (?)
+T3EB8 000:088.025   CPU_ReadMem(32 bytes @ 0xE0047FE0)
+T3EB8 000:088.388   CPU_ReadMem(4 bytes @ 0xE0047FBC)
+T3EB8 000:088.658   CPU_ReadMem(4 bytes @ 0xE0047FCC)
+T3EB8 000:088.862   [0][1]: E0047000 CID B105900D PID 003BB908 DEVARCH 00000000 DEVTYPE 12 CSTF
+T3EB8 000:088.871   CPU_ReadMem(32 bytes @ 0xE0048FE0)
+T3EB8 000:089.230   CPU_ReadMem(4 bytes @ 0xE0048FBC)
+T3EB8 000:089.468   CPU_ReadMem(4 bytes @ 0xE0048FCC)
+T3EB8 000:089.709   [0][2]: E0048000 CID B105900D PID 001BB961 DEVARCH 00000000 DEVTYPE 21 TMC
+T3EB8 000:089.717   CPU_ReadMem(32 bytes @ 0xE0049FE0)
+T3EB8 000:090.079   [0][3]: E0049000 CID B105F00D PID 001BB101 TSG
+T3EB8 000:090.087   CPU_ReadMem(32 bytes @ 0xE0040FE0)
+T3EB8 000:090.496   CPU_ReadMem(4 bytes @ 0xE0040FBC)
+T3EB8 000:090.776   CPU_ReadMem(4 bytes @ 0xE0040FCC)
+T3EB8 000:091.001   [0][4]: E0040000 CID B105900D PID 000BBD21 DEVARCH 00000000 DEVTYPE 11 TPIU
+T3EB8 000:091.024   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T3EB8 000:091.416   [0][5]: E00FF000 CID B105100D PID 000BB4C9 ROM Table
+T3EB8 000:091.429   ROMTbl[1] @ E00FF000
+T3EB8 000:091.438   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T3EB8 000:091.978   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T3EB8 000:092.346   CPU_ReadMem(4 bytes @ 0xE000EFBC)
+T3EB8 000:092.559   CPU_ReadMem(4 bytes @ 0xE000EFCC)
+T3EB8 000:092.822   [1][0]: E000E000 CID B105900D PID 000BBD21 DEVARCH 47702A04 DEVTYPE 00 Cortex-M33
+T3EB8 000:092.852   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T3EB8 000:093.212   CPU_ReadMem(4 bytes @ 0xE0001FBC)
+T3EB8 000:093.473   CPU_ReadMem(4 bytes @ 0xE0001FCC)
+T3EB8 000:093.693   [1][1]: E0001000 CID B105900D PID 000BBD21 DEVARCH 47701A02 DEVTYPE 00 DWT
+T3EB8 000:093.703   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T3EB8 000:094.069   CPU_ReadMem(4 bytes @ 0xE0002FBC)
+T3EB8 000:094.312   CPU_ReadMem(4 bytes @ 0xE0002FCC)
+T3EB8 000:094.566   [1][2]: E0002000 CID B105900D PID 000BBD21 DEVARCH 47701A03 DEVTYPE 00 FPB
+T3EB8 000:094.579   CPU_ReadMem(32 bytes @ 0xE0000FE0)
+T3EB8 000:094.950   CPU_ReadMem(4 bytes @ 0xE0000FBC)
+T3EB8 000:095.201   CPU_ReadMem(4 bytes @ 0xE0000FCC)
+T3EB8 000:095.470   [1][3]: E0000000 CID B105900D PID 000BBD21 DEVARCH 47701A01 DEVTYPE 43 ITM
+T3EB8 000:095.480   CPU_ReadMem(32 bytes @ 0xE0041FE0)
+T3EB8 000:095.838   CPU_ReadMem(4 bytes @ 0xE0041FBC)
+T3EB8 000:096.052   CPU_ReadMem(4 bytes @ 0xE0041FCC)
+T3EB8 000:096.314   [1][5]: E0041000 CID B105900D PID 002BBD21 DEVARCH 47724A13 DEVTYPE 13 ETM
+T3EB8 000:096.325   CPU_ReadMem(32 bytes @ 0xE0042FE0)
+T3EB8 000:096.705   CPU_ReadMem(4 bytes @ 0xE0042FBC)
+T3EB8 000:096.909   CPU_ReadMem(4 bytes @ 0xE0042FCC)
+T3EB8 000:097.134   [1][6]: E0042000 CID B105900D PID 000BBD21 DEVARCH 47701A14 DEVTYPE 14 CSS600-CTI
+T3EB8 000:097.169   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:097.469   Data:  03 00 13 00
+T3EB8 000:097.477   Debug reg: DHCSR
+T3EB8 000:097.486 - 27.440ms returns 0
+T3EB8 000:097.499 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3EB8 000:097.505   CPU_ReadMem(4 bytes @ 0x400E002C)
+T3EB8 000:097.705   Data:  02 00 00 00
+T3EB8 000:097.713 - 0.214ms returns 0
+T3EB8 000:097.760 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:097.766   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:097.972   Data:  03 00 13 00
+T3EB8 000:097.980   Debug reg: DHCSR
+T3EB8 000:097.988 - 0.228ms returns 0
+T3EB8 000:098.010 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:098.016   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:098.236   Data:  03 00 13 00
+T3EB8 000:098.245   Debug reg: DHCSR
+T3EB8 000:098.252 - 0.242ms returns 0
+T3EB8 000:098.259 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
+T3EB8 000:098.265   CPU_ReadMem(4 bytes @ 0x400E001C)
+T3EB8 000:098.468   Data:  00 FC FF 00
+T3EB8 000:098.476 - 0.217ms returns 0
+T3EB8 000:098.484 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:098.490   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:098.705   Data:  03 00 13 00
+T3EB8 000:098.713   Debug reg: DHCSR
+T3EB8 000:098.720 - 0.236ms returns 0
+T3EB8 000:098.728 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
+T3EB8 000:098.733   CPU_ReadMem(4 bytes @ 0x400E0018)
+T3EB8 000:098.934   Data:  00 80 FF 00
+T3EB8 000:098.943 - 0.215ms returns 0
+T3EB8 000:098.951 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:098.957   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:099.201   Data:  03 00 13 00
+T3EB8 000:099.209   Debug reg: DHCSR
+T3EB8 000:099.217 - 0.266ms returns 0
+T3EB8 000:099.223 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
+T3EB8 000:099.229   CPU_ReadMem(4 bytes @ 0x400E0020)
+T3EB8 000:099.468   Data:  00 FC 00 00
+T3EB8 000:099.476 - 0.253ms returns 0
+T3EB8 000:099.484 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:099.490   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:099.705   Data:  03 00 13 00
+T3EB8 000:099.715   Debug reg: DHCSR
+T3EB8 000:099.723 - 0.239ms returns 0
+T3EB8 000:099.731 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
+T3EB8 000:099.737   CPU_ReadMem(4 bytes @ 0x400E0028)
+T3EB8 000:099.965   Data:  00 FC 1F 00
+T3EB8 000:099.973 - 0.242ms returns 0
+T3EB8 000:099.981 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:099.987   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:100.237   Data:  03 00 13 00
+T3EB8 000:100.252   Debug reg: DHCSR
+T3EB8 000:100.261 - 0.279ms returns 0
+T3EB8 000:100.271 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
+T3EB8 000:100.292   CPU_ReadMem(4 bytes @ 0x400E0024)
+T3EB8 000:100.674   Data:  00 E0 1F 00
+T3EB8 000:100.703 - 0.432ms returns 0
+T3EB8 000:100.726 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:100.752   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:101.088   Data:  03 00 13 00
+T3EB8 000:101.119   Debug reg: DHCSR
+T3EB8 000:101.135 - 0.408ms returns 0
+T3EB8 000:101.152 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3EB8 000:101.168   CPU_ReadMem(4 bytes @ 0x400E002C)
+T3EB8 000:101.475   Data:  02 00 00 00
+T3EB8 000:101.500 - 0.347ms returns 0
+T3EB8 000:101.519 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3EB8 000:101.535   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3EB8 000:101.824   Data:  03 00 13 00
+T3EB8 000:101.848   Debug reg: DHCSR
+T3EB8 000:101.864 - 0.345ms returns 0
+T3EB8 000:101.885 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3EB8 000:101.904   CPU_ReadMem(4 bytes @ 0x400E002C)
+T3EB8 000:102.175   Data:  02 00 00 00
+T3EB8 000:102.194 - 0.308ms returns 0
+T3EB8 000:109.651 JLINK_Close()
+T3EB8 000:124.048 - 14.396ms
+T3EB8 000:124.077   
+T3EB8 000:124.085   Closed
