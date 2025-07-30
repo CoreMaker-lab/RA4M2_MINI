@@ -1,0 +1,212 @@
+T77AC 000:000.712   SEGGER J-Link V8.12f Log File
+T77AC 000:000.963   DLL Compiled: Feb 12 2025 13:34:40
+T77AC 000:001.003   Logging started @ 2025-07-30 09:35
+T77AC 000:001.017   Process: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\e2-server-gdb.exe
+T77AC 000:001.034 - 1.030ms 
+T77AC 000:001.054 JLINK_GetDLLVersion()
+T77AC 000:001.067 - 0.013ms returns 81206
+T77AC 000:003.113 JLINK_OpenEx(...)
+T77AC 000:010.167   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T77AC 000:010.761   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T77AC 000:010.912   Decompressing FW timestamp took 98 us
+T77AC 000:016.359   Hardware: V9.60
+T77AC 000:016.447   S/N: 69660718
+T77AC 000:016.467   OEM: SEGGER
+T77AC 000:016.635   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T77AC 000:017.132   Bootloader: (FW returned invalid version)
+T77AC 000:017.819   TELNET listener socket opened on port 19021
+T77AC 000:017.947   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T77AC 000:018.077   WEBSRV Webserver running on local port 19080
+T77AC 000:018.183   Looking for J-Link GUI Server exe at: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\ARM\Segger_v8.12.6\JLinkGUIServer.exe
+T77AC 000:018.265   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T77AC 000:018.397   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T77AC 000:115.245   J-Link GUI Server info: "J-Link GUI server V8.18 "
+T77AC 000:117.927 - 114.807ms returns "O.K."
+T77AC 000:118.048 JLINK_ExecCommand("ProjectFile=C:\Users\a8456\e2_studio\workspace\RA4M2_MINI_Project7/RA4M2_MINI_Project7 Debug_Flat.jlink", ...). 
+T77AC 000:137.733 - 19.689ms returns 0x00
+T77AC 000:138.021 JLINK_ExecCommand("device=R7FA4M2AD", ...). 
+T77AC 000:138.188   Flash bank @ 0x0100A100: SFL: Parsing sectorization info from ELF file
+T77AC 000:138.199     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000010, .SectorStartAddr = 0x00000000
+T77AC 000:138.210   FlashBank @0x0100A100: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T77AC 000:138.485   Flash bank @ 0x60000000: SFL: Parsing sectorization info from ELF file
+T77AC 000:138.496     FlashDevice.SectorInfo[0]: .SectorSize = 0x00010000, .SectorStartAddr = 0x00000000
+T77AC 000:141.965   Device "R7FA4M2AD" selected.
+T77AC 000:142.301 - 4.266ms returns 0x00
+T77AC 000:142.481 JLINK_TIF_GetAvailable(...)
+T77AC 000:142.691 - 0.209ms 
+T77AC 000:142.718 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T77AC 000:143.158 - 0.439ms returns 0x00
+T77AC 000:143.172 JLINK_SetSpeed(4000)
+T77AC 000:143.310 - 0.138ms 
+T77AC 000:143.332 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:143.480   ConfigTargetSettings() start
+T77AC 000:143.513    J-Link Script File: Executing ConfigTargetSettings()
+T77AC 000:143.527   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T77AC 000:148.485   ConfigTargetSettings() end - Took 4.97ms
+T77AC 000:148.497   InitTarget() start
+T77AC 000:148.505    J-Link Script File: Executing InitTarget()
+T77AC 000:148.512   SWD selected. Executing JTAG -> SWD switching sequence.
+T77AC 000:149.832   DAP initialized successfully.
+T77AC 000:149.847   Determining TrustZone configuration...
+T77AC 000:150.550     Secure Debug: Enabled (SSD)
+T77AC 000:150.559   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T77AC 000:151.015     --> Correct transfer type configured. Done.
+T77AC 000:151.025   InitTarget() end - Took 2.51ms
+T77AC 000:151.443   Found SW-DP with ID 0x6BA02477
+T77AC 000:153.003   DPIDR: 0x6BA02477
+T77AC 000:153.013   CoreSight SoC-400 or earlier
+T77AC 000:153.022   Scanning AP map to find all available APs
+T77AC 000:153.707   AP[2]: Stopped AP scan as end of AP map has been reached
+T77AC 000:153.716   AP[0]: AHB-AP (IDR: 0x84770001, ADDR: 0x00000000)
+T77AC 000:153.724   AP[1]: APB-AP (IDR: 0x54770002, ADDR: 0x01000000)
+T77AC 000:153.732   Iterating through AP map to find AHB-AP to use
+T77AC 000:154.503   AP[0]: Core found
+T77AC 000:154.513   AP[0]: AHB-AP ROM base: 0xE00FE000
+T77AC 000:154.874   CPUID register: 0x410FD214. Implementer code: 0x41 (ARM)
+T77AC 000:154.884   Feature set: Mainline
+T77AC 000:155.210   Cache: No cache
+T77AC 000:155.223   Found Cortex-M33 r0p4, Little endian.
+T77AC 000:155.474   -- Max. mem block: 0x00010A88
+T77AC 000:155.869   
+  ***** Warning: 
+T77AC 000:155.878   Cortex-M (ARMv8-M and later): The connected J-Link (S/N 69660718) uses an old firmware module that does not handle I/D-cache correctly. Proper debugging functionality cannot be guaranteed if cache is enabled
+T77AC 000:155.890   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:156.099   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T77AC 000:156.326   CPU_ReadMem(4 bytes @ 0xE0002000)
+T77AC 000:156.550   FPUnit: 8 code (BP) slots and 0 literal slots
+T77AC 000:156.559   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T77AC 000:156.759   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T77AC 000:156.972   CPU_ReadMem(4 bytes @ 0xE0001000)
+T77AC 000:157.202   CPU_ReadMem(4 bytes @ 0xE0001000)
+T77AC 000:157.473   CPU_ReadMem(4 bytes @ 0xE0001028)
+T77AC 000:157.700   CPU_ReadMem(4 bytes @ 0xE0001038)
+T77AC 000:157.931   CPU_ReadMem(4 bytes @ 0xE0001048)
+T77AC 000:158.165   CPU_ReadMem(4 bytes @ 0xE0001058)
+T77AC 000:158.381   CPU_WriteMem(4 bytes @ 0xE0001000)
+T77AC 000:158.625   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T77AC 000:158.851   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T77AC 000:159.075   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T77AC 000:159.350   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T77AC 000:159.642   CPU_ReadMem(4 bytes @ 0xE000EFB8)
+T77AC 000:159.915   Security extension: implemented
+T77AC 000:159.939   Secure debug: enabled
+T77AC 000:159.954   CoreSight components:
+T77AC 000:159.968   ROMTbl[0] @ E00FE000
+T77AC 000:159.984   CPU_ReadMem(64 bytes @ 0xE00FE000)
+T77AC 000:160.526   CPU_ReadMem(32 bytes @ 0xE0044FE0)
+T77AC 000:160.906   CPU_ReadMem(4 bytes @ 0xE0044FBC)
+T77AC 000:161.126   CPU_ReadMem(4 bytes @ 0xE0044FCC)
+T77AC 000:161.356   [0][0]: E0044000 CID B105900D PID 005BB906 DEVARCH 00000000 DEVTYPE 14 CTI (?)
+T77AC 000:161.366   CPU_ReadMem(32 bytes @ 0xE0047FE0)
+T77AC 000:161.724   CPU_ReadMem(4 bytes @ 0xE0047FBC)
+T77AC 000:161.924   CPU_ReadMem(4 bytes @ 0xE0047FCC)
+T77AC 000:162.125   [0][1]: E0047000 CID B105900D PID 003BB908 DEVARCH 00000000 DEVTYPE 12 CSTF
+T77AC 000:162.134   CPU_ReadMem(32 bytes @ 0xE0048FE0)
+T77AC 000:162.506   CPU_ReadMem(4 bytes @ 0xE0048FBC)
+T77AC 000:162.736   CPU_ReadMem(4 bytes @ 0xE0048FCC)
+T77AC 000:162.965   [0][2]: E0048000 CID B105900D PID 001BB961 DEVARCH 00000000 DEVTYPE 21 TMC
+T77AC 000:162.973   CPU_ReadMem(32 bytes @ 0xE0049FE0)
+T77AC 000:163.325   [0][3]: E0049000 CID B105F00D PID 001BB101 TSG
+T77AC 000:163.336   CPU_ReadMem(32 bytes @ 0xE0040FE0)
+T77AC 000:163.699   CPU_ReadMem(4 bytes @ 0xE0040FBC)
+T77AC 000:163.906   CPU_ReadMem(4 bytes @ 0xE0040FCC)
+T77AC 000:164.125   [0][4]: E0040000 CID B105900D PID 000BBD21 DEVARCH 00000000 DEVTYPE 11 TPIU
+T77AC 000:164.136   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T77AC 000:164.480   [0][5]: E00FF000 CID B105100D PID 000BB4C9 ROM Table
+T77AC 000:164.491   ROMTbl[1] @ E00FF000
+T77AC 000:164.500   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T77AC 000:164.995   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T77AC 000:165.350   CPU_ReadMem(4 bytes @ 0xE000EFBC)
+T77AC 000:165.583   CPU_ReadMem(4 bytes @ 0xE000EFCC)
+T77AC 000:165.802   [1][0]: E000E000 CID B105900D PID 000BBD21 DEVARCH 47702A04 DEVTYPE 00 Cortex-M33
+T77AC 000:165.812   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T77AC 000:166.166   CPU_ReadMem(4 bytes @ 0xE0001FBC)
+T77AC 000:166.378   CPU_ReadMem(4 bytes @ 0xE0001FCC)
+T77AC 000:166.607   [1][1]: E0001000 CID B105900D PID 000BBD21 DEVARCH 47701A02 DEVTYPE 00 DWT
+T77AC 000:166.616   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T77AC 000:166.974   CPU_ReadMem(4 bytes @ 0xE0002FBC)
+T77AC 000:167.176   CPU_ReadMem(4 bytes @ 0xE0002FCC)
+T77AC 000:167.410   [1][2]: E0002000 CID B105900D PID 000BBD21 DEVARCH 47701A03 DEVTYPE 00 FPB
+T77AC 000:167.450   CPU_ReadMem(32 bytes @ 0xE0000FE0)
+T77AC 000:167.798   CPU_ReadMem(4 bytes @ 0xE0000FBC)
+T77AC 000:168.007   CPU_ReadMem(4 bytes @ 0xE0000FCC)
+T77AC 000:168.211   [1][3]: E0000000 CID B105900D PID 000BBD21 DEVARCH 47701A01 DEVTYPE 43 ITM
+T77AC 000:168.220   CPU_ReadMem(32 bytes @ 0xE0041FE0)
+T77AC 000:168.606   CPU_ReadMem(4 bytes @ 0xE0041FBC)
+T77AC 000:168.814   CPU_ReadMem(4 bytes @ 0xE0041FCC)
+T77AC 000:169.026   [1][5]: E0041000 CID B105900D PID 002BBD21 DEVARCH 47724A13 DEVTYPE 13 ETM
+T77AC 000:169.035   CPU_ReadMem(32 bytes @ 0xE0042FE0)
+T77AC 000:169.376   CPU_ReadMem(4 bytes @ 0xE0042FBC)
+T77AC 000:169.607   CPU_ReadMem(4 bytes @ 0xE0042FCC)
+T77AC 000:169.830   [1][6]: E0042000 CID B105900D PID 000BBD21 DEVARCH 47701A14 DEVTYPE 14 CSS600-CTI
+T77AC 000:169.869   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:170.073   Data:  01 00 10 01
+T77AC 000:170.082   Debug reg: DHCSR
+T77AC 000:170.090 - 26.758ms returns 0
+T77AC 000:170.124 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T77AC 000:170.132   CPU_ReadMem(4 bytes @ 0x400E002C)
+T77AC 000:170.364   Data:  01 00 00 00
+T77AC 000:170.372 - 0.248ms returns 0
+T77AC 000:170.394 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:170.400   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:170.599   Data:  01 00 10 01
+T77AC 000:170.607   Debug reg: DHCSR
+T77AC 000:170.615 - 0.221ms returns 0
+T77AC 000:170.636 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:170.642   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:170.850   Data:  01 00 10 01
+T77AC 000:170.860   Debug reg: DHCSR
+T77AC 000:170.868 - 0.232ms returns 0
+T77AC 000:170.876 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
+T77AC 000:170.882   CPU_ReadMem(4 bytes @ 0x400E001C)
+T77AC 000:171.099   Data:  00 FC FF 00
+T77AC 000:171.110 - 0.234ms returns 0
+T77AC 000:171.121 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:171.128   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:171.360   Data:  01 00 10 01
+T77AC 000:171.376   Debug reg: DHCSR
+T77AC 000:171.385 - 0.263ms returns 0
+T77AC 000:171.394 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
+T77AC 000:171.403   CPU_ReadMem(4 bytes @ 0x400E0018)
+T77AC 000:171.652   Data:  00 80 FF 00
+T77AC 000:171.663 - 0.268ms returns 0
+T77AC 000:171.673 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:171.680   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:171.887   Data:  01 00 10 01
+T77AC 000:171.898   Debug reg: DHCSR
+T77AC 000:171.906 - 0.233ms returns 0
+T77AC 000:171.914 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
+T77AC 000:171.921   CPU_ReadMem(4 bytes @ 0x400E0020)
+T77AC 000:172.125   Data:  00 FC 00 00
+T77AC 000:172.134 - 0.219ms returns 0
+T77AC 000:172.144 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:172.150   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:172.394   Data:  01 00 10 01
+T77AC 000:172.428   Debug reg: DHCSR
+T77AC 000:172.439 - 0.295ms returns 0
+T77AC 000:172.448 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
+T77AC 000:172.456   CPU_ReadMem(4 bytes @ 0x400E0028)
+T77AC 000:172.690   Data:  00 FC 1F 00
+T77AC 000:172.706 - 0.258ms returns 0
+T77AC 000:172.719 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:172.727   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:172.962   Data:  01 00 10 01
+T77AC 000:172.976   Debug reg: DHCSR
+T77AC 000:172.984 - 0.265ms returns 0
+T77AC 000:172.992 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
+T77AC 000:172.999   CPU_ReadMem(4 bytes @ 0x400E0024)
+T77AC 000:173.213   Data:  00 E0 1F 00
+T77AC 000:173.221 - 0.229ms returns 0
+T77AC 000:173.231 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T77AC 000:173.238   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77AC 000:173.465   Data:  01 00 10 01
+T77AC 000:173.474   Debug reg: DHCSR
+T77AC 000:173.482 - 0.250ms returns 0
+T77AC 000:173.488 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T77AC 000:173.494   CPU_ReadMem(4 bytes @ 0x400E002C)
+T77AC 000:173.699   Data:  01 00 00 00
+T77AC 000:173.707 - 0.218ms returns 0
+T77AC 000:174.238 JLINK_Close()
+T77AC 000:186.502 - 12.262ms
+T77AC 000:186.531   
+T77AC 000:186.537   Closed
